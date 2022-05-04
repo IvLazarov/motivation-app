@@ -8,7 +8,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(45deg, #8360c3, #2ebf91);
-
+  background-position: center;
+  
   
 
 }

@@ -1,9 +1,10 @@
 .home-hld{
   height: 750px;
-  color:rgb(250, 246, 246);
+  color:#663399;
   font-family: 'Mansalva';
 }
 
+/* Odluchi dali ovaa boja #702963 kje e boja na tekstot ili taa sho ja imash */
 
 .home-hld h2{
   width: 50%;
@@ -98,12 +99,626 @@
 }
 
 .goal-style{
-  border: 1px solid yellow;
   width: 60%;
   height: 600px;
   position: relative;
   left: 350px;
-  top: 100px;
+  top: 100px;  
 }
 
+.popup-str{
+  background-color: #663399;
+  color: #3CB371;
+  width:12%;
+  height: 7%;
+  border: 1px solid #663399;
+  font-family: 'Mansalva';
+  font-size: 19px;
+  border-radius: 25px;
+  position: relative;
+  left:390px;
+  text-align: center;
+}
+
+.popup-str:hover{
+    background-color: #3CB371;
+    color:#663399;
+    border: 1px solid #3CB371;   
+}
+
+/* Stilot za postavenite celi */
+
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-list {
+  list-style: none;
+  
+}
+
+.things-style{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin:50px auto;
+}
+
+.things-style li{
+  flex-basis: 70%;
+  color: #663399;
+  font-size: 20px;
+}
+
+.complete-btn{
+  background-color: #2ebf91;
+  color: #663399;
+  flex-basis: 10%;
+  border: 1px solid #2ebf91;
+  border-radius: 25px;
+  font-family: 'Mansalva';
+  font-size: 17px;
+}
+
+.complete-btn:hover{
+  background-color:#228B22 ;
+  border: 1px solid #228B22;
+  transition: all 0.5s;
+}
+
+.trash-btn{
+  background-color:	#DC143C;
+  color: #663399;
+  flex-basis: 10%;
+  margin-left: 3px;
+  border: 1px solid #DC143C;
+  border-radius: 25px;
+  font-family: 'Mansalva';
+  font-size: 17px;
+  transition: all 0.5s;
+}
+
+.trash-btn:hover{
+  background-color:red;
+  border: 1px solid red;
+  transition: all 0.5s;
+}
+
+.goal-counter{
+  width: 20%;
+  height: 50px;
+  color: #663399;
+  font-size: 27px;
+  text-align: right;
+  position: relative;
+  bottom: 600px;
+  left: 1100px;
+}
+
+
+/* Media queries */
+
+@media(max-width:1400px){
+  .home-hld h2{
+    font-size: 27px;
+  }
+
+  .home-hld button{
+    position: absolute;
+    left:870px;
+  }
+
+}
+
+@media(max-width:1360px){
+  .home-hld button{
+    position: absolute;
+    left: 850px;
+    top:298px;
+  }
+
+  .popup-str{
+    position: relative;
+    left: 340px;
+    width: 15%;
+  }
+}
+
+@media(max-width:1250px){
+  .home-hld button{
+    font-size: 17px;
+    width:12%;
+    position: absolute;
+    left: 820px;
+  }
+
+  .home-hld a{
+    position: relative;
+    top:350px;
+    left:500px;
+  }
+  .things-style li{
+    flex-basis: 60%;
+  }
+
+  .popup-str{
+    position: relative;
+    left: 290px;
+  }
+}
+
+@media(max-width:1100px){
+  .home-hld button{
+    position: absolute;
+    left: 640px;
+    top:300px;
+  }
+
+  .home-hld h2{
+    position: absolute;
+    left: 230px;
+  }
+
+  .home-hld input{
+    position: absolute;
+    left: 300px;
+  }
+
+  .home-hld a{
+    position: relative;
+    left: 330px;
+  }
+
+  #quote-stl{
+    position: relative;
+    left: 350px;
+  }
+}
+
+@media(max-width:1050px){
+  .home-hld button{
+    position: absolute;
+    left: 630px;
+  }
+
+  .home-hld h2{
+    font-size:24px;
+  }
+
+
+  .popup-str{
+    position: relative;
+    left: 240px;
+    width: 20%;
+  }
+
+  .goal-counter{
+    font-size: 20px;
+    position: relative;
+    left: 800px;
+  }
+}
+
+@media(max-width:960px){
+  .home-hld button{
+    position: absolute;
+    left: 600px;
+    top:250px;
+  }
+
+  .home-hld input{
+    position: absolute;
+    top:250px;
+  }
+
+  .home-hld a{
+    position: relative;
+    top:300px;
+  }
+
+  #quote-stl{
+    position: relative;
+    top:330px;
+    font-size: 17px;
+  }
+   
+  .popup-str{
+    position: relative;
+    left: 225px;
+  }
+
+  .part-two a{
+    font-size: 17px;
+  }
+
+  .goal-counter{
+    position: relative;
+    left:520px;
+  }
+}
+
+@media(max-width:900px){
+  .home-hld a{
+    position: relative;
+    left:300px;
+  }
+
+  .home-hld button{
+    position: absolute;
+    left:580px;
+  }
+
+  .home-hld h2{
+    font-size: 20px;
+  }
+}
+
+@media(max-width:870px){
+  .home-hld button{
+    width: 15%;
+  }
+
+  .things-style li{
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width:800px){
+  
+  .home-hld button{
+    position: absolute;
+    left: 450px;
+    top:220px;
+  }
+
+  .home-hld input{
+    position: absolute;
+    left: 200px;
+    top:220px;
+  }
+  .home-hld a{
+    position: relative;
+    left: 200px;
+    top:280px;
+  }
+
+  .home-hld h2{
+    position: absolute;
+    left:150px;
+  }
+
+  #quote-stl{
+    font-size: 16px;
+    position: relative;
+    left: 260px;
+  }
+
+  .popup-str{
+    position: relative;
+    left:195px;
+  }
+
+  .things-style li{
+    font-size: 15px;
+  }
+
+  .popup-str{
+    font-size: 15px;
+  }
+
+  .goal-counter{
+    font-size: 17px;
+  }
+}
+
+@media(max-width:700px){
+  .home-hld button{
+    position: absolute;
+    left: 420px;
+    width: 17%;
+  }
+
+  .part-two a{
+    position: relative;
+    bottom:600px;
+    left: 260px;
+  }
+
+  .goal-counter{
+    position: relative;
+    left: 300px;
+  }
+  .goal-style{
+    position: relative;
+    left: 150px;
+    width: 70%;
+  }
+}
+
+@media(max-width:670px){
+  .home-hld h2{
+    font-size: 18px;
+    position: absolute;
+    left: 100px;
+  }
+
+  .home-hld button{
+    position: absolute;
+    left: 360px;
+  }
+
+  .home-hld input{
+    position: absolute;
+    left: 150px;
+  }
+
+  .home-hld a{
+    position: relative;
+    left:150px;
+    font-size: 17px;
+  }
+
+  #quote-stl{
+    position:relative;
+    left: 200px;
+  }
+
+  .popup-str{
+    position: relative;
+    left: 150px;
+  }
+  .goal-counter{
+    font-size: 15px;
+  }
+}
+
+@media(max-width:600px){
+  .home-hld button{
+    position: absolute;
+    left: 340px;
+    font-size: 15px;
+  }
+
+  .home-hld input[type=text]{
+    font-size: 15px;
+  }
+
+  .home-hld a{
+    position: relative;
+    left:125px;
+  }
+
+  #quote-stl{
+    position: relative;
+    left: 190px;
+  }
+
+  .part-two a{
+    position: relative;
+    left: 190px;
+  }
+
+  .goal-counter{
+    position: relative;
+    left: 230px;
+    
+  }
+
+  .goal-style{
+    position: relative;
+    left: 100px;
+  }
+
+  .complete-btn, .trash-btn{
+    font-size: 15px;
+  }
+
+  .popup-str{
+    font-size: 13px;
+  }
+
+  .complete-btn, .trash-btn{
+    font-size: 12.5px;
+  }
+}
+
+@media(max-width:550px){
+  .home-hld button{
+    position: absolute;
+    left:323px;
+    font-size: 13px;
+  }
+}
+
+@media(max-width:500px){
+  .home-hld button{
+    position: absolute;
+    left:309px;
+    width: 18%;
+  }
+
+  .home-hld h2{
+    font-size: 17px;
+  }
+
+  .home-hld a{
+    position: relative;
+    left: 100px;
+  }
+
+  #quote-stl{
+    position: relative;
+    left: 180px;
+  }
+
+  .goal-counter{
+    font-size: 12.5px;
+  }
+
+  .popup-str{
+    position: relative;
+    left: 145px;
+  }
+
+  .part-two a{
+    position: relative;
+    left:155px;
+  }
+
+  .things-style li{
+    font-size: 13px;
+    flex-basis: 40%;
+  }
+}
+
+@media(max-width:450px){
+  .home-hld button{
+    position: absolute;
+    left:252px;
+    width: 21%;
+  }
+
+  .home-hld input{
+    position: absolute;
+    left: 110px;
+  }
+
+  .home-hld h2{
+    position: absolute;
+    left:80px;
+    top:25px;
+  }
+
+  .home-hld a{
+    position: relative;
+    left: 60px;
+    font-size: 16px;
+  }
+
+  #quote-stl{
+    position: relative;
+    left:150px;
+    font-size: 14px;
+  }
+
+  .goal-counter{
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    position: relative;
+    left: 160px;
+  }
+
+  .part-two a{
+    position: relative;
+    left: 100px;
+  }
+
+  .goal-style{
+    position: relative;
+    left: 50px;
+    width: 75%;
+  }
+
+  .popup-str{
+    height: 30px;
+    width: 90px;
+    position: relative;
+    left: 120px;
+  }
+}
+
+@media(max-width:400px){
+ 
+  .home-hld button{
+    position: absolute;
+    left: 230px;
+    font-size: 11px;
+  }
+
+  .home-hld input{
+    position: absolute;
+    left: 100px;
+  }
+
+  .home-hld h2{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 16px;
+  }
+
+  .home-hld a{
+    position: relative;
+    left:65px ;
+    font-size: 14px;
+  }
+
+  #quote-stl{
+    position: relative;
+    left: 130px;
+  }
+
+  .part-two a{
+    position: relative;
+    left: 50px;
+  }
+
+  .goal-counter{
+    position: relative;
+    left: 120px;
+  }
+
+  .goal-style{
+    position: relative;
+    left: 30px;
+    width:80%;
+  }
+
+  .popup-str{
+    position: relative;
+    left: 110px;
+  }
+
+  .complete-btn,.trash-btn{
+    font-size: 10px;
+  }
+}
+
+@media(max-width:360px){
+
+  .home-hld h2{
+    position: absolute;
+    left: 45px;
+  }
+
+  .home-hld input{
+    position: absolute;
+    left: 70px;
+  }
+
+  .home-hld button{
+    position: absolute;
+    left: 182px;
+  }
+
+  .home-hld a{
+    position: relative;
+    left: 33px;
+    font-size: 13.5px;
+  }
+
+  #quote-stl{
+    position: relative;
+    left: 100px;
+  }
+
+  .goal-style{
+    width: 85%;
+    position: relative;
+    left: 10px;
+  }
+}
 

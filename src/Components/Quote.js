@@ -40,9 +40,5 @@ const Quote = () => {
 
 export default Quote;
 
-//stiliziraj go toa sho si go naprail do sea
 
-
-
-// // //Potsekjaj se od: https://codepen.io/kumeKumovski/pen/NWaMMQR
 

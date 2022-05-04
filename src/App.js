@@ -7,25 +7,19 @@ function App() {
   
 
   return (
-    
     <Router>
-    
     <>
-    
-    
-    
-    <Routes>
-    <Route path='/' element={<Quote/>}/>
-    <Route path='/actions' element={<TakingAction/>}/>
-    </Routes>    
-    
-    
+      <Routes>
+      <Route path='/' element={<Quote/>}/>
+      <Route path='/actions' element={<TakingAction/>}/>
+      </Routes>    
     </>
     </Router>
-    
-      
-    
   )
 }
 
 export default App;
+
+
+
+//prop drilling react

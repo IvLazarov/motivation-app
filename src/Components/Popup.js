@@ -17,4 +17,3 @@ const Popup = (props) =>{
 export default Popup;
 
 
-//Kopcheto Done go zatvora prozorecot otkako kje gi napishesh site celi za denot
